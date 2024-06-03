@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ var inputNumber = prompt("NHập số cần tính");
+ var number = parseFloat(inputNumber);
+function Sin(number) {
+  return Math.sin(number);
+}
+function Cos(number) {
+  return Math.cos(number);
+}
+function Tan(number) {
+  return Math.tan(number);
+}
+if (!isNaN(number)) {
+  var sinResult = Sin(number);
+  var cosResult = Cos(number);
+  var tanResult = Tan(number);
+  alert("sin("+number+")="+sinResult+"")
+  alert("sin("+number+")="+cosResult+"")
+  alert("sin("+number+")="+tanResult+"") 
+} else {
+  alert("Không thể tính");
+}
+    </script>
+</body>
+</html>

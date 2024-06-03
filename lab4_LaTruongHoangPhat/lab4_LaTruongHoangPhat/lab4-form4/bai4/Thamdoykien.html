@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thăm dò ý kiến</title>
+    <style>
+        .container{
+            width:500px;
+            height:300px;
+            margin:auto;
+            border:1px solid;
+           
+        }
+        h3{
+            text-align:center;
+        }
+        button{
+            background:gray;
+            padding:2px 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Thăm dò ý kiến</h3>
+        <div style="margin-left:10px;">
+            <label for="name">Tên đăng nhập</label>
+            <input id="name" type="text">
+            <label>Giới tính</label>
+            <input id="nam" type="radio" name="gender">
+            <label for="nam">Nam</label>
+            <input type="radio" name="gender" id="nu">
+            <label for="nu">Nữ</label>
+        </div> 
+        <div style="margin-left:10px;">
+            <h4>Những mục bạn thường quan tâm trên Internet</h4>
+            <div style="margin-left:100px;">
+                <div>
+                    <input type="checkbox" id="tintuc">
+                    <label for="tintuc">Tin tức</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="giaitri">
+                    <label for="giaitri">Giải trí</label>
+                </div>
+                <div>
+                    <input id="gochoctap" type="checkbox">
+                    <label for="gochoctap">Góc học tập</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cacmuckhac">
+                    <label for="cacmuckhac">Các mục khác</label>
+                </div>
+            </div>
+        </div>
+        <div style="margin-left:110px;margin-top:10px;">
+            <button>Gửi đi</button>
+            <button>Phục Hồi</button>
+        </div>
+    </div>
+   
+</body>
+</html>

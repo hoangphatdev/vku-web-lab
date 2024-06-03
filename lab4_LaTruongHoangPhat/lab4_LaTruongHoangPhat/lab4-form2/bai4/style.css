@@ -1,0 +1,75 @@
+
+body{
+    margin-bottom:500px;
+}
+ *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+section{
+   
+    height:400px;
+    width:40%;
+    margin:auto;
+    box-shadow: 10px 10px 5px 10px rgb(71, 65, 65);
+}
+.container1{
+    
+    display:grid;
+    grid-template-columns:1% 45% 35% 15%;
+    margin-left:2%;
+    margin-top:2vh;
+    margin-right:2%;
+    column-gap: 1%;
+}
+
+.div1{
+    margin-top:5px;
+    height:40px;
+    width:10px;
+    background-color:red;
+
+}
+.div2 .thongtin{
+  margin-top:15px;
+  
+   
+}
+.div4{
+    border:1px solid gray;
+    text-align: center; 
+    margin-top:10px;
+}
+.div4 .rutgon{
+    font-size:12px;
+    position:relative;
+    color:gray;
+    top:3px;
+}
+.div4 .fa-chevron-up{
+    position:relative;
+    top:5px;
+    font-size:13px;
+   
+}
+
+
+.container2{
+    display:grid;
+    grid-template-columns: 40% 60%;
+    margin-top:3%;
+}
+.div1-con2{
+    text-align: right;
+    margin-right:5%;
+}
+.div1-con2 div{
+    margin-bottom:7%;
+}
+input{
+    width:250px;;
+    height:25px;
+    margin-bottom:2%;
+}
+

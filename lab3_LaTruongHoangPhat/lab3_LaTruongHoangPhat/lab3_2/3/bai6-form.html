@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sum{
+            display:flex;
+            flex-direction:row;
+        }
+        .eduDiv{
+            flex:2.5;
+            background:lightcoral;
+        }
+        .candiDiv{
+            flex:6;
+            background:lightskyblue;
+        }
+        select{
+            width:100%;
+        }
+        .submit, h1{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interview Feedback</h1>
+    <p style="padding-bottom:0;margin-bottom:0;font-size:20px;font-weight: bold">
+        This type of form may be an easy way to consolidate/standardlize
+
+    </p>
+    <p style="margin-top:0;padding-top:0;font-size:20px; font-weight:bold;">
+        feedback on interview candidates
+    </p>
+    <form>
+        <label for="name">Candidate Name</label>
+        <input type="text" id="name">
+        <label for="position">Position Applied For</label>
+        <input type="text" id="position">
+        <br> <br>
+
+        <div class="sum">
+            <div class="eduDiv">
+                <label style="font-weight:bold;" for="level">Education Level</label>
+                <select>
+                    <option value="High School">1)High School</option>
+                    <option value="Bachelors Degree">2)Bachelors Degree</option>
+                    <option value="Masters Degree">3)Masters Degree</option>
+                    <option value="Doctoral Degree">4)Doctoral Degree</option>
+                    <option value="Professional Certification">5)Professional Certification</option>
+                </select>
+            </div>
+            <div class="candiDiv">
+                <label style="font-weight: bold;" for="candidate">Candidate is a good fit for the position</label>
+                <br>
+                <input type="radio" id="agree" name="fit" value="agree">
+                <label for="agree">Agree</label> <br>
+    
+                <input type="radio" id="somea" name="fit" value="">
+                <label for="somea">Somewhat Agree</label> <br>
+                
+                <input type="radio" id="neutral" name="fit" value="neutral">
+                <label for="neutral">Neutral</label> <br>
+    
+                <input type="radio" id="somed" name="fit" value="">
+                <label for="somed">Somewhat Disagree</label> <br>
+    
+                <input type="radio" id="disagree" name="fit" value="disagree">
+                <label for="disagree">Disagree</label>
+            </div>
+        </div>
+
+        <br>
+        <label style="font-weight:bold;">Should we hire this candidate?</label>
+        <input id="yes" type="radio" name="yesno">
+        <label for="yes">Yes</label>
+        <input id="no" type="radio" name="yesno">
+        <label for="no">No</label>
+        <br>
+        <br>
+        <label style="font-weight:bold" for="comments">Comment</label>
+        <textarea rows="3" cols="20"></textarea>
+        <br>
+        <br>
+        <div class="submit">
+            <input type="submit">
+        </div>
+
+
+    </form>
+</body>
+</html>

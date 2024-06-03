@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var a = parseFloat(prompt("Nhập ẩn a"))
+       var b = parseFloat(prompt("Nhập ẩn b"))
+       var c = parseFloat(prompt("Nhập ẩn c"))
+        delta = b*b - 4*a*c;
+        if (delta == 0) {
+            alert("Phương trình có nghiệm kép x1=x2="+ (-b/(2*a))+"" )
+        } else if (delta > 0) {
+            alert("phương trình có hai nghiệm \n x1 = "+((-b+delta**0.5)/2*a)+  "\n x2 = " +((-b-delta**0.5)/2*a)+"" )
+        }else if (delta <0 ) {
+            alert("Phương trình vô nghiệm")
+        } 
+
+    </script>
+</body>
+</html>

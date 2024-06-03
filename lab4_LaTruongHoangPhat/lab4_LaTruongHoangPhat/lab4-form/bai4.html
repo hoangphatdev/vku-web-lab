@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            text-align:center;
+        }
+        .middle{
+            display:flex;
+        }
+        .khoitren{
+            height:100px;
+            width:800px;
+            background:green;
+        }
+        .khoitrai , .khoigiua, .khoiphai{
+           display:inline-block;
+           
+        }
+        .khoitrai{
+            width:150px;
+            height:400px;
+            background-color:lightgreen;
+        }
+        .khoigiua{
+            width:500px;
+            height:400px;
+        }
+        .khoiphai{
+            width:150px;
+            height:400px;
+            background:lightgreen;
+        }
+        .khoiduoi{
+            width:800px;
+            height:50px;
+            background:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="khoitren">
+        Khối trên(rộng 800px, cao 100px)
+    </div>
+    <div class="middle">
+      <div class="khoitrai">
+        khoi trai
+      </div>
+      <div class="khoigiua">khoi giua</div>
+      <div class="khoiphai">khoi phai</div>
+    </div>
+    <div style class="khoiduoi">
+        Khối dưới(rộng 800px, cao 50px)
+    </div>
+</body>
+</html>

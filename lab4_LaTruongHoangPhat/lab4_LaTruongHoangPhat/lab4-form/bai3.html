@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        form{
+            margin-left:20%;
+            margin-top:10%;
+            width:60%;
+            box-shadow: 20px 20px 15px 10px rgb(82, 73, 73);
+        }
+        .flex{
+            display:flex;
+            flex-direction: row;
+        }
+        .flex1{
+            flex:2;
+        }
+        .flex2{
+            flex:8;
+        }
+        *{
+            color:black;
+            font-weight: 600;;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        
+        <h1 style="font-size:22px;text-align:center;font-weight:500;">THÔNG TIN ỨNG VIÊN</h1>
+        
+        <label for="name">Họ tên</label>
+        <input style="margin-left:84px;"type="text" size="50" id="name">
+        <br><br>
+        <label for="birthYear">Năm sinh</label>
+        <select style="margin-left:65px;"  id="birthYear">
+            <option>
+                1990
+            </option>
+            <option>
+                1991
+            </option>
+            <option>
+                1992
+            </option>
+        </select>
+        <br><br>
+
+        <label for="gender">Giới tính</label>
+        <input style="margin-left:65px;" type="radio" name="gender" id="male">
+        <label for="male">Nam</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Nữ</label>
+        <br><br>
+
+        <label for="wage">Mức lương đề nghị</label>
+        <input type="text" size="35"  id="wage">
+        <br><br>
+
+        <label>Hình thức làm việc</label>
+        <input type="checkbox" id="all">
+        <label for="all">Toàn thời gian</label>
+        <input type="checkbox" id="haft">
+        <label for="haft">Bán thời gian</label>
+        <br><br>
+
+       <div class="flex">
+        <div class="flex1">
+            <label for="textarea">Thông tin khác</label>
+        </div>
+        <div class="flex2">
+            <textarea  style="margin-left:19px;" rows="4" cols="53"></textarea>
+        </div>
+       </div>
+       <br>
+       <div style="text-align:center;">
+        <button>
+            Gửi
+        </button>
+        <button>
+            Xóa
+        </button>
+       </div> 
+
+
+    </form>
+</body>
+</html>

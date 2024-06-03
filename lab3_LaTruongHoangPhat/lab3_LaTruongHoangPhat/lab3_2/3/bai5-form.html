@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align:center;
+        }
+        #salary{
+            width:80px;
+        }
+        textarea::placeholder{
+        color:black;
+       }
+       div {
+        text-align:center;
+       }
+       
+    </style>
+</head>
+<body>
+    <h1>APPLICATION FORM</h1>
+    <form action="">
+        <label for="fistName">First Name</label>
+        <input type="text" id="fistName"> <br> <br>
+
+        <label>Education</label>
+        <input type="checkbox" id="graduate" value="Graduate">
+        <label for="graduate">Graduate</label>
+        <input type="checkbox" id="postGraduate" value="Post Graduate">
+        <label for="postGraduate">Post Graduate</label><br> <br>
+
+        <label>Gender</label>
+        <input type="radio" id="male" value="Male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label> <br> <br>
+
+        <label for="salary">Salary</label>
+        <input  type="text" id="salary"> <br> <br>
+
+        <label for="remarks">Remarks</label>
+        <textarea rows="3" cols="40" id="remarks"  placeholder="Type your text here"></textarea> <br> <br>
+
+        <label for="country">Country</label>
+        <select>
+            <option value="australia">Australia</option>
+            <option value="vietnam">VietNam</option>
+            <option value="japan">Japan</option>
+        </select> <br> <br>
+
+       
+    </form>
+    <div>
+        <input id="input" type="submit">
+        <input id="input" type="reset">
+       </div>
+</body>
+</html>

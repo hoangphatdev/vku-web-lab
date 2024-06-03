@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button style="margin-left: 50%" onclick="addStudent()">Add Student</button>
+    <script>
+   var students = []; 
+
+function addStudent() {
+  var studentCode = prompt("Mã Sinh Viên"); 
+  var name = prompt("Tên sinh viên"); 
+  var address = prompt("Địa chỉ liên lạc"); 
+  var phoneNumber = prompt("Nhập số điện thoại"); 
+  var codeRegex = /^20IT\d{3}$/; 
+  var phoneRegex = /^\d{6,10}$/; 
+//  dấu $ là để kết thúc
+  if (!codeRegex.test(studentCode)) {
+    alert("Mã Sinh Viên");
+    return;
+  }
+
+  if (name.trim() === "") {
+    alert("Tên sinh viên");
+    return;
+  }else{
+    alert("không được để trống")
+  }
+
+  if (address.trim() === "") {
+    alert("Địa chỉ liên lạc");
+    return;
+  }else{
+    alert("Không được để trống")
+  }
+
+  if (!phoneRegex.test(phoneNumber)) {
+    alert("Nhập số điện thoại");
+    return;
+  }else{
+    alert("không hợp lệ")
+  }
+  var student = {
+    studentCode: studentCode,
+    name: name,
+    address: address,
+    phoneNumber: phoneNumber
+  };
+
+  students.push(student); 
+  alert("Sinh viên đã được thêm vào danh sách");
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    label{
+        color: red;
+    }
+    .light-mode {
+            background-color: #fff;
+            color: #333;
+        }
+
+    .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+    
+</style>
+<body>
+    <form>
+        <input name="1" type="radio" id="dark">
+        <label> Light off</label>
+        <input name="1" type="radio" id="light">
+        <label> Light on</label>
+    </form>
+    <script>
+        const lightBtn = document.getElementById('light');
+        const darkBtn = document.getElementById('dark');
+        const body = document.body;
+
+        body.classList.add('light-mode');
+
+        lightBtn.addEventListener('click', () => {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+        });
+
+        darkBtn.addEventListener('click', () => {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+      
+      option[value=""][disabled] {
+        display: none;
+      }
+      option {
+        color: red;
+      }
+body{
+    margin-bottom:500px;
+}
+ *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+section{
+   
+    height:750px;
+    width:50%;
+    margin:auto;
+    box-shadow: 10px 10px 5px 10px rgb(71, 65, 65);
+}
+.container1{
+    
+    display:grid;
+    grid-template-columns:1% 50% 35% 12%;
+    margin-left:2%;
+    margin-top:2vh;
+    margin-right:2%;
+    column-gap: 1%;
+}
+
+.div1{
+    margin-top:5px;
+    height:40px;
+    width:10px;
+    background-color:red;
+
+}
+.div2 .thongtin{
+  margin-top:15px;
+  
+   
+}
+.div4{
+    border:3px solid gray;
+    text-align: center; 
+    margin-top:10px;
+    padding-top:5px;
+    padding-bottom:10px;
+}
+.div4 .rutgon{
+    font-size:15px;
+    position:relative;
+    top:2px;
+    color:gray;
+}
+.div4 .fa-chevron-up{
+    position:relative;
+    top:3px;
+    font-size:13px;
+   
+}
+
+.container2{
+    text-align:center;
+}
+.div0-con2{
+   text-align:left ;
+   margin-left:26%;
+}
+.div1-con2{
+    display:inline-block;
+    margin-right:1%;
+}
+.div2-con2{
+    display:inline-block;
+    margin-right:2%;
+}
+.div3-con2{
+    display:inline-block;
+    margin-right:2%;
+}
+.div4-con2{
+    display:inline-block;
+    margin-right:2%;
+}
+.div5-con2{
+    display:inline-block;
+    margin-right:2%;
+}
+.div1-con2 div, .div2-con2 div, .div3-con2 div,
+.div4-con2 div, .div5-con2 div{
+}
+
+.container3{
+    margin-top:2%;
+    text-align:right;
+    margin-right:20%; 
+}

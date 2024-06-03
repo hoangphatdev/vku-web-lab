@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        form{
+            background-color: lightcoral;
+            width:50%;
+            margin-left:200px;
+        }
+        select{
+            
+            height:25px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>
+            Đăng ký
+        </h1>
+        <p>
+            Luôn miễn phí
+        </p>
+        <input type="text" placeholder="Họ" required>
+        <input type="text" placeholder="Tên" required>
+        <input style="display:block; width:100%;" type="text" placeholder="Số di động hoặc email" required>
+        <input style="display:block; width:100%;" type="text" placeholder="Mật khẩu mới" required>
+        <label style="display:block;">
+            Ngày sinh
+        </label>
+        <div style="display:flex;
+                    flex-flow:wrap row;
+        ">
+            <div style="flex:5.5">
+               <div style="display:flex;
+                           flex-flow: wrap row; 
+               ">
+                <div style="flex:1 0 1">
+                    <select>
+                        <option value="">15</option>
+                        <option value="">14</option>
+                        <option value="">13</option>
+                        <option value="">12</option>
+                        <option value="">11</option>
+                    </select>
+                </div>
+                <div style="flex:1 0 1">
+                    <select name="" id="">
+                        <option value=""> Tháng 4</option>
+                        <option value="">3</option>
+                        <option value="">2</option>
+                        <option value="">1</option>
+                    </select>
+                </div>
+                <div style="flex:1 0 1">
+                    <select name="" id="">
+                        <option value="">1993</option>
+                        <option value="">2005</option>
+                        <option value="">2004</option>
+                    </select>
+                </div>
+               </div>
+            </div>
+            <div style="font-size: 12px;
+                        flex:4.5;
+                        padding:0;
+                        margin:0;
+                ">
+                <p>Tại sao tôi cần cung cấp ngày</p>
+                <p>sinh của mình?</p>
+            </div>
+        </div>
+        <div>
+            <input type="radio" id="female" name="gender">
+        <label for="female">Nữ</label>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Nam</label>
+        </div>
+    </form>
+</body>
+</html>

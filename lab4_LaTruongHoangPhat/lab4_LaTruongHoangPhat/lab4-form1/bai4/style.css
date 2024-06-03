@@ -1,0 +1,48 @@
+/* Cài đặt chung */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  /* Header */
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Nội dung chính */
+  
+  .noi-dung {
+    float: left;
+    width: 70%;
+  }
+  
+  /* Thanh bên */
+  
+  .thanh-ben {
+    float: right;
+    width: 30%;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  

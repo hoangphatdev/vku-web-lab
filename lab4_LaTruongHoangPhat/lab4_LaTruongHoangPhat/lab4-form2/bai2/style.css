@@ -1,0 +1,72 @@
+        
+        
+ *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+section{
+    height:500px;
+    width:60%;
+    margin:auto;
+    box-shadow: 10px 10px 5px 10px rgb(71, 65, 65);
+}
+.container1{
+    
+    display:grid;
+    grid-template-columns:1% 29% 58% 9%;
+    margin-left:2%;
+    margin-top:2vh;
+    margin-right:2%;
+    column-gap: 1%;
+}
+.container2{
+    margin-left:2%;
+    margin-right:2%;
+}
+.div1{
+    margin-top:5px;
+    height:40px;
+    width:10px;
+    background-color:red;
+
+}
+.div2 .thongtin{
+  margin-top:15px;
+  
+   
+}
+.div4{
+    border:3px solid gray;
+    text-align: center; 
+    margin-top:10px;
+    padding-top:5px;
+    padding-bottom:10px;
+}
+.div4 .rutgon{
+    position:relative;
+    top:2px;
+    color:gray;
+}
+.div4 .fa-chevron-up{
+    position:relative;
+    top:3px;
+    font-size:13px;
+   
+}
+.container2{
+    margin-top:1%;
+    margin-bottom:1%;
+}
+.container3{
+    display:grid;
+    grid-template-columns:35% 65%;
+    margin-top:1%;
+}
+.div1-con3{
+    text-align:right;
+    margin-right:10px;
+}
+option[value=""]{
+    display:none;
+}
